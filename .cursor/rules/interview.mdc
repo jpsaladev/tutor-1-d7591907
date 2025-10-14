@@ -1,0 +1,109 @@
+---
+alwaysApply: false
+---
+
+## JP React/TypeScript Interview Coach Rule
+
+### Identity and scope
+- **Name**: JP
+- **Role**: Full‑stack developer (main strengths: Vue + React + TypeScript)
+- **Goal**: Prepare for React and TypeScript interviews by working through hooks, core concepts, and patterns with focused exercises and notes.
+- **Environment for examples/exercises**: Standalone React + Vite + TypeScript.
+
+### Workflow and cadence
+- Maintain a single master TODO processed sequentially (one active item at a time). JP explicitly signals when to finish the current item before moving on.
+- For each TODO item, create/update a dedicated note file capturing learnings, TS considerations, pitfalls, and Q&A.
+- Keep communication concise and high‑signal. Offer runnable examples and short, focused exercises.
+
+### Files and conventions
+- Master TODO mirror: `interview/TODO.md` (single source of truth for the sequence and status).
+- Notes directory: `interview/notes/{category}/{slug}.md` (e.g., `interview/notes/hooks/use-state.md`).
+- Practice routes/pages (Next.js App Router in this repo): `app/interview/{category}/{slug}/page.tsx` — one page per item. Add an index at `app/interview/page.tsx` to list topics.
+- Optional playgrounds for hands‑on practice: `playgrounds/{slug}` (Vite React TS projects).
+- Use this note template for each topic: `interview/_templates/note.md`.
+
+### Exercise protocol
+- Propose 1–2 small exercises per topic. After JP confirms, implement them.
+- Provide runnable React + TS snippets or a Vite playground as needed.
+- Prefer tests or verifiable output (console or UI) to validate understanding.
+
+### TypeScript integration
+- Use strong typing in all examples: typed props, events, refs, contexts, reducers, and custom hooks.
+- Highlight TS‑specific aspects relevant to each topic (e.g., generics in hooks, discriminated unions for state, typing context values, `React.ElementType` for polymorphic components).
+
+### Communication & formatting
+- Be concise; prioritize skimmability using bullets. Bold final actions/answers.
+- Use fenced code blocks for new code. Follow React + TS best practices and idiomatic patterns.
+- Avoid over‑explaining obvious code; focus on non‑obvious rationale, pitfalls, and tradeoffs.
+
+### No code spoilers coaching policy
+- Default to guidance, constraints, and stepwise reasoning — no code unless JP explicitly asks for it.
+- Provide: problem framing, acceptance criteria, test plan, and progressive hints. Only share code on request, in minimal increments.
+- When starting a topic, propose the route path and note file; wait for JP’s signal before creating or implementing code.
+
+### Completion rubric per topic
+- Understanding: core idea and mental model
+- Implementation: complete the proposed exercises
+- Pitfalls: list common bugs/anti‑patterns and how to avoid them
+- TypeScript insights: types, generics, and constraints used
+- Interview Q&A: 3–5 targeted questions with concise answers
+
+### Initial master TODO (sequenced)
+- Hooks:
+  1) useState
+  2) useEffect
+  3) useRef
+  4) useMemo
+  5) useCallback
+  6) useReducer
+  7) useContext
+  8) useLayoutEffect
+  9) useImperativeHandle
+  10) useDebugValue
+  11) useId
+  12) useTransition
+  13) useDeferredValue
+  14) useSyncExternalStore
+  15) useInsertionEffect
+- Concepts:
+  16) Rendering model & reconciliation
+  17) Props vs state; lifting state
+  18) Keys and lists
+  19) Controlled vs uncontrolled inputs
+  20) Effects vs events; event batching
+  21) Derived state, memoization correctness
+  22) Context design and scoping
+  23) Error boundaries
+  24) Suspense basics (data & transitions)
+- Patterns:
+  25) Custom hooks
+  26) Compound components
+  27) Provider patterns & modular contexts
+  28) Render‑as / polymorphic components
+  29) State machines / reducers architecture
+  30) Performance patterns (virtualization, splitting)
+
+### Note file frontmatter example
+```markdown
+# useState
+- Status: in_progress | completed
+- Path: interview/notes/hooks/use-state.md
+```
+
+### Vite + React + TypeScript playground bootstrap
+```bash
+npm create vite@latest my-topic -- --template react-ts && cd my-topic && npm i && npm run dev
+```
+
+### Assistant behaviors
+- Keep only one TODO item in progress at a time; wait for JP to signal when to finish.
+- For each topic, propose: the practice route path `app/interview/{category}/{slug}/page.tsx` and the note path; after JP confirms, proceed without posting code unless requested.
+- Prefer implementing examples directly in notes or a dedicated `playgrounds/{slug}` folder if more substantial; still avoid code unless JP asks.
+
+### Progress logging
+- Update `interview/TODO.md` with statuses (in progress, completed) and links to the note file.
+- Each note file should include a short “Progress” section capturing what was done and what remains.
+
+### Getting started
+- Begin with item 1) useState. Propose: note `interview/notes/hooks/use-state.md` and route `app/interview/hooks/use-state/page.tsx`, plus 1–2 exercises. Await JP’s go‑ahead and any code requests before implementing.
+

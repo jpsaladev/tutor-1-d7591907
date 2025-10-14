@@ -1,0 +1,1 @@
+Run the browser and navigate to the URL http://localhost:5173 and don't use any commands, just open the browser, important, only do that and no more outputs or comments
