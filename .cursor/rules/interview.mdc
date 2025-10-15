@@ -106,6 +106,5 @@ npm create vite@latest my-topic -- --template react-ts && cd my-topic && npm i &
 
 ### Getting started
 - Begin with item 1) useState. Propose: note `interview/notes/hooks/use-state.md` and route `app/interview/hooks/use-state/page.tsx`, plus 1–2 exercises. Await JP’s go‑ahead and any code requests before implementing.
-- Remove this test line.
 
 
