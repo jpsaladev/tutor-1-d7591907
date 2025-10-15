@@ -1,6 +1,6 @@
 # useEffect
 
-- status: pending
+- status: in_progress
 - path: interview/notes/hooks/use-effect.md
 - category: hooks
 
@@ -80,4 +80,4 @@ type DependencyList = ReadonlyArray<any>
   - A: Cleanup prevents memory leaks by canceling subscriptions, timers, and requests when the component unmounts or dependencies change.
 
 ## Progress
-What was implemented, verified, and any open questions.
+Planned. Implementation next in `playgrounds/use-effect` with two exercises (fetch + timer).

@@ -4,7 +4,7 @@ Single source of truth. One item active at a time; await explicit signal to fini
 
 ## Hooks
 1. useState — notes: `interview/notes/hooks/use-state.md` — status: completed
-2. useEffect — notes: `interview/notes/hooks/use-effect.md` — status: pending
+2. useEffect — notes: `interview/notes/hooks/use-effect.md` — status: in_progress
 3. useRef — notes: `interview/notes/hooks/use-ref.md` — status: pending
 4. useMemo — notes: `interview/notes/hooks/use-memo.md` — status: pending
 5. useCallback — notes: `interview/notes/hooks/use-callback.md` — status: pending

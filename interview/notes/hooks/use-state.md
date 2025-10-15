@@ -1,6 +1,6 @@
 # useState
 
-- status: in_progress
+- status: completed
 - path: interview/notes/hooks/use-state.md
 - category: hooks
 
