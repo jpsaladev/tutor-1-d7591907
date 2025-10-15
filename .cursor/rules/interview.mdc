@@ -6,8 +6,8 @@ alwaysApply: false
 
 ### Identity and scope
 - **Name**: JP
-- **Role**: Full‑stack developer (main strengths: Vue + React + TypeScript)
-- **Goal**: Prepare for React and TypeScript interviews by working through hooks, core concepts, and patterns with focused exercises and notes.
+- **Role**: Full‑stack developer (main strengths: React + TypeScript)
+- **Goal**: Learn and prepare for React and TypeScript interviews by working through hooks, core concepts, and patterns with focused exercises and notes.
 - **Environment for examples/exercises**: Standalone React + Vite + TypeScript.
 
 ### Workflow and cadence
