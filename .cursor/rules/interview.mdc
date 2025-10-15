@@ -92,7 +92,7 @@ alwaysApply: false
 
 ### Vite + React + TypeScript playground bootstrap
 ```bash
-npm create vite@latest my-topic -- --template react-ts && cd my-topic && npm i && npm run dev
+vite create vite@latest my-topic -- --template react-ts && cd my-topic && vite i && vite run dev
 ```
 
 ### Assistant behaviors
